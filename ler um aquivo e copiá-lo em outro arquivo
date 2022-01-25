@@ -1,0 +1,16 @@
+Nomearq1 = input("Nome Arquivo1:")
+Nomearq2 = input("Nome Arquivo2:")
+Nomearq3 = input("Nome Arquivo3:")
+
+arq1 = open(Nomearq1,"r")
+arq2 = open(Nomearq2,"r")
+arq3 = open(Nomearq3,"w") # zera o arquivo
+
+for lin in arq1:
+   arq3.write(lin)
+for lin in arq2:
+   arq3.write(lin)
+
+arq1.close()
+arq2.close()
+arq3.close()

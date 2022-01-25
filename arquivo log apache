@@ -1,0 +1,16 @@
+arquivo = open("try_on-2017-11-13.txt","r") # quantas vezes o IP: 64.39.102.157 foi atacado?
+n_ataque = 0
+linhaseg = ""
+
+for linha in aquivo:
+   lista_linha = linha.split()
+   for coluna in arquivo:
+      lista_coluna = coluna.split(":")
+      lista_seg = linhaseg.append[coluna[3])
+      if coluna[3] == linhaseg:
+         count += 1
+         print("na data:",lista_coluna[0],"o IP:",lista_linha[1],"recebeu:",count,"ataques") 
+
+arquivo.close()
+   
+   

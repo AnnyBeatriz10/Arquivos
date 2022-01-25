@@ -1,0 +1,9 @@
+nomeArq = input("Nome do arq:")
+fd1 = open(nomeArq,"r")
+fd2 = open(nomeArq+".txt","w")
+
+for lin in fd1:
+   fd2.write(lin.upper())
+
+fd1.close()
+fd2.close()

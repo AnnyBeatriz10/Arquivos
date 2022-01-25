@@ -1,0 +1,17 @@
+chave = input("Digite uma chave:")
+
+arquivo_cifrar = open("ar.py","r",newline="")
+arquivo_novo = open("ar.py" + ".enc", "w",newline="")
+
+l = 0
+cifrado = ""
+
+for i in arquivo_cifrar:
+   
+   arq = chr(ord(i) ^ (ord(chave[l])- ord('a')))
+   cifrado += arq
+   l = (l + 1) % len(chave)
+   arquivo_novo.write(cifrado)
+   
+arquivo_cifrar.close()
+arquivo_novo.close()
